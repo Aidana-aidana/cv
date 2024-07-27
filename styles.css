@@ -4,36 +4,68 @@ body {
     padding: 0;
     background-color: #000;
     color: #fff;
-    overflow-x: hidden; /* предотвращает горизонтальную прокрутку */
+    overflow-x: hidden;
+    /* предотвращает горизонтальную прокрутку */
 }
 
 .resume-container {
     display: flex;
-    flex-wrap: wrap; /* добавлено для улучшения адаптивности */
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 20px auto;
     background-color: #333;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    width: 100%; /* добавлено для адаптивности */
+    width: 100%;
     box-sizing: border-box;
+    position: relative;
+    /* Добавлено для позиционирования кнопок внутри контейнера */
 }
+
+.language-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.language-switcher button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.language-switcher button:hover {
+    background-color: #555;
+}
+
 
 .left-section {
     background-color: #444;
     color: white;
     padding: 30px;
-    width: 100%; /* изменено для улучшения адаптивности */
-    max-width: 300px; /* добавлено ограничение максимальной ширины */
+    width: 100%;
+    /* изменено для улучшения адаптивности */
+    max-width: 300px;
+    /* добавлено ограничение максимальной ширины */
     text-align: center;
     box-sizing: border-box;
-    margin: 0 auto; /* центрирование на маленьких экранах */
+    margin: 0 auto;
+    /* центрирование на маленьких экранах */
 }
 
 .right-section {
     padding: 30px;
-    width: 100%; /* изменено для улучшения адаптивности */
+    width: 100%;
+    /* изменено для улучшения адаптивности */
     box-sizing: border-box;
-    flex: 1; /* добавлено для растяжения на доступное пространство */
+    flex: 1;
+    /* добавлено для растяжения на доступное пространство */
 }
 
 .profile-picture img {
@@ -259,4 +291,9 @@ ul li {
 .right-section .project p {
     color: #a9b8ca;
     /* gainsboro */
+}
+
+.language-switcher {
+    top: 10px;
+    right: 10px;
 }
