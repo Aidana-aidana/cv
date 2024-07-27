@@ -100,10 +100,11 @@ ul li {
     border: none;
     color: #000;
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 10px 5px;
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
+    width: 100px;
 }
 
 .filter-buttons button:hover {
@@ -119,6 +120,11 @@ ul li {
     .right-section {
         width: 100%;
     }
+
+    .filter-buttons button {
+        width: 80%;
+        margin: 5px auto;
+    }
 }
 
 .highlight {
@@ -128,12 +134,12 @@ ul li {
 .highlight span {
     display: inline-block;
     margin-right: 5px;
-    color: #eec36d;
+    color: #e3cfa7;
     /* tomato */
 }
 
 .highlight span:nth-child(2) {
-    color: #7ab4ee;
+    color: #a9bfd4;
     /* dodgerblue */
 }
 
@@ -148,62 +154,62 @@ ul li {
 }
 
 .highlight span:nth-child(5) {
-    color: #ecce95;
+    color: #dcc69e;
     /* orange */
 }
 
 .highlight span:nth-child(6) {
-    color: #8a2be2;
+    color: #b096c8;
     /* blueviolet */
 }
 
 .highlight span:nth-child(7) {
-    color: #ff4500;
+    color: #ca927d;
     /* orangered */
 }
 
 .highlight span:nth-child(8) {
-    color: #da70d6;
+    color: #c7a7c6;
     /* orchid */
 }
 
 .highlight span:nth-child(9) {
-    color: #00ced1;
+    color: #addbdb;
     /* darkturquoise */
 }
 
 .highlight span:nth-child(10) {
-    color: #7fffd4;
+    color: #93c1b1;
     /* aquamarine */
 }
 
 .highlight span:nth-child(11) {
-    color: #d2691e;
+    color: #d8aa89;
     /* chocolate */
 }
 
 .highlight span:nth-child(12) {
-    color: #6495ed;
+    color: #9eadc9;
     /* cornflowerblue */
 }
 
 .highlight span:nth-child(13) {
-    color: #ff69b4;
+    color: #c094aa;
     /* hotpink */
 }
 
 .highlight span:nth-child(14) {
-    color: #b22222;
+    color: #b27979;
     /* firebrick */
 }
 
 .highlight span:nth-child(15) {
-    color: #228b22;
+    color: #739473;
     /* forestgreen */
 }
 
 .highlight span:nth-child(16) {
-    color: #ffd700;
+    color: #d8d0a3;
     /* gold */
 }
 
