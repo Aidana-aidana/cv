@@ -12,6 +12,7 @@ body {
     margin: 20px auto;
     background-color: #333;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
 }
 
 .left-section {
@@ -20,11 +21,13 @@ body {
     padding: 30px;
     width: 30%;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .right-section {
     padding: 30px;
     width: 70%;
+    box-sizing: border-box;
 }
 
 .profile-picture img {
@@ -104,7 +107,8 @@ ul li {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
-    width: 100px;
+    width: calc(25% - 10px);
+    box-sizing: border-box;
 }
 
 .filter-buttons button:hover {
@@ -114,16 +118,18 @@ ul li {
 @media (max-width: 768px) {
     .resume-container {
         flex-direction: column;
+        max-width: 100%;
     }
 
     .left-section,
     .right-section {
         width: 100%;
+        padding: 20px;
     }
 
     .filter-buttons button {
-        width: 80%;
-        margin: 5px auto;
+        width: calc(50% - 10px);
+        margin: 5px;
     }
 }
 
@@ -134,17 +140,17 @@ ul li {
 .highlight span {
     display: inline-block;
     margin-right: 5px;
-    color: #e3cfa7;
+    color: #dbc69b;
     /* tomato */
 }
 
 .highlight span:nth-child(2) {
-    color: #a9bfd4;
+    color: #97acc2;
     /* dodgerblue */
 }
 
 .highlight span:nth-child(3) {
-    color: #9ccf9c;
+    color: #9cc09c;
     /* limegreen */
 }
 
@@ -154,62 +160,62 @@ ul li {
 }
 
 .highlight span:nth-child(5) {
-    color: #dcc69e;
+    color: #d8c39b;
     /* orange */
 }
 
 .highlight span:nth-child(6) {
-    color: #b096c8;
+    color: #a78ac2;
     /* blueviolet */
 }
 
 .highlight span:nth-child(7) {
-    color: #ca927d;
+    color: #cb937f;
     /* orangered */
 }
 
 .highlight span:nth-child(8) {
-    color: #c7a7c6;
+    color: #ab8caa;
     /* orchid */
 }
 
 .highlight span:nth-child(9) {
-    color: #addbdb;
+    color: #add2d3;
     /* darkturquoise */
 }
 
 .highlight span:nth-child(10) {
-    color: #93c1b1;
+    color: #b4dfd1;
     /* aquamarine */
 }
 
 .highlight span:nth-child(11) {
-    color: #d8aa89;
+    color: #ab876d;
     /* chocolate */
 }
 
 .highlight span:nth-child(12) {
-    color: #9eadc9;
+    color: #8e9bb1;
     /* cornflowerblue */
 }
 
 .highlight span:nth-child(13) {
-    color: #c094aa;
+    color: #d5b1c3;
     /* hotpink */
 }
 
 .highlight span:nth-child(14) {
-    color: #b27979;
+    color: #ac8181;
     /* firebrick */
 }
 
 .highlight span:nth-child(15) {
-    color: #739473;
+    color: #aac2aa;
     /* forestgreen */
 }
 
 .highlight span:nth-child(16) {
-    color: #d8d0a3;
+    color: #e2d79a;
     /* gold */
 }
 
