@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const enBtn = document.getElementById('en-btn');
+    const ruBtn = document.getElementById('ru-btn');
+    const elements = document.querySelectorAll('[data-en]');
+
+    enBtn.addEventListener('click', () => {
+        elements.forEach(el => el.innerText = el.getAttribute('data-en'));
+    });
+
+    ruBtn.addEventListener('click', () => {
+        elements.forEach(el => el.innerText = el.getAttribute('data-ru'));
+    });
+
     // Function to show the selected section
     function showSection(sectionId) {
         const sections = document.querySelectorAll('.section');
