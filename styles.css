@@ -4,30 +4,36 @@ body {
     padding: 0;
     background-color: #000;
     color: #fff;
+    overflow-x: hidden; /* предотвращает горизонтальную прокрутку */
 }
 
 .resume-container {
     display: flex;
+    flex-wrap: wrap; /* добавлено для улучшения адаптивности */
     max-width: 1200px;
     margin: 20px auto;
     background-color: #333;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    overflow: hidden;
+    width: 100%; /* добавлено для адаптивности */
+    box-sizing: border-box;
 }
 
 .left-section {
     background-color: #444;
     color: white;
     padding: 30px;
-    width: 30%;
+    width: 100%; /* изменено для улучшения адаптивности */
+    max-width: 300px; /* добавлено ограничение максимальной ширины */
     text-align: center;
     box-sizing: border-box;
+    margin: 0 auto; /* центрирование на маленьких экранах */
 }
 
 .right-section {
     padding: 30px;
-    width: 70%;
+    width: 100%; /* изменено для улучшения адаптивности */
     box-sizing: border-box;
+    flex: 1; /* добавлено для растяжения на доступное пространство */
 }
 
 .profile-picture img {
